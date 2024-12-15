@@ -82,32 +82,57 @@ Serper is a search engine tool integrated with **InsightFlow** to gather the mos
 
 ## Demo Code
 
-This demo demonstrates how to use images from the `images` folder (`v1.png` to `v13.png`) for processing tasks in InsightFlow. Below is an example of how the system might retrieve and process images from the folder.
+Here’s a demonstration of how images are displayed in **InsightFlow** for topic research. The images shown below are part of the demo for showcasing how the system processes and displays relevant visuals for the given topic.
 
-### Example Demo Code:
+### **Images Demo:**
 
-```python
-import os
-from PIL import Image
-import matplotlib.pyplot as plt
+![Image 1](images/v1.png)
+*Example image for topic 1*
 
-# Folder containing images
-image_folder = 'images/'
+![Image 2](images/v2.png)
+*Example image for topic 2*
 
-# Load images from v1.png to v13.png
-image_files = [f'v{i}.png' for i in range(1, 14)]
+![Image 3](images/v3.png)
+*Example image for topic 3*
 
-# Display images for demo
-for image_file in image_files:
-    image_path = os.path.join(image_folder, image_file)
-    
-    # Open the image
-    try:
-        img = Image.open(image_path)
-        plt.imshow(img)
-        plt.title(f"Displaying {image_file}")
-        plt.axis('off')  # Hide axes
-        plt.show()
-    except FileNotFoundError:
-        print(f"Image {image_file} not found in the directory.")
+![Image 4](images/v4.png)
+*Example image for topic 4*
+
+![Image 5](images/v5.png)
+*Example image for topic 5*
+
+![Image 6](images/v6.png)
+*Example image for topic 6*
+
+![Image 7](images/v7.png)
+*Example image for topic 7*
+
+![Image 8](images/v8.png)
+*Example image for topic 8*
+
+![Image 9](images/v9.png)
+*Example image for topic 9*
+
+![Image 10](images/v10.png)
+*Example image for topic 10*
+
+![Image 11](images/v11.png)
+*Example image for topic 11*
+
+![Image 12](images/v12.png)
+*Example image for topic 12*
+
+![Image 13](images/v13.png)
+*Example image for topic 13*
+
+These images represent visual data relevant to the topic research process in **InsightFlow**. The images are included to provide a better understanding of how the project processes and utilizes visual data in conjunction with text-based news retrieval.
+
+## Getting Started
+
+To use **InsightFlow**, clone the repository and follow the instructions to install the necessary dependencies and run the agents.
+
+```bash
+git clone https://github.com/Daudsarfraz/InsightFlow.git
+cd InsightFlow
+# Install dependencies (if applicable)
 
