@@ -80,11 +80,10 @@ Serper is a search engine tool integrated with **InsightFlow** to gather the mos
 3. **News Summarizer Agent** takes the scraped data and generates a concise news article summarizing the key points.
 4. **News File Writer Agent** writes the article to a markdown file, making it easy to save and access.
 
-## Demo Code
-
-Here’s a demonstration of how images are displayed in **InsightFlow** for topic research. The images shown below are part of the demo for showcasing how the system processes and displays relevant visuals for the given topic.
 
 ### **Images Demo:**
+
+Here’s a demonstration of how images are displayed in **InsightFlow** for topic research. The images shown below are part of the demo for showcasing how the system processes and displays relevant visuals for the given topic.
 
 ![Image 1](images/v1.png)
 *Example image for topic 1*
