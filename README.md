@@ -80,11 +80,34 @@ Serper is a search engine tool integrated with **InsightFlow** to gather the mos
 3. **News Summarizer Agent** takes the scraped data and generates a concise news article summarizing the key points.
 4. **News File Writer Agent** writes the article to a markdown file, making it easy to save and access.
 
-## Getting Started
+## Demo Code
 
-To use **InsightFlow**, clone the repository and follow the instructions to install the necessary dependencies and run the agents.
+This demo demonstrates how to use images from the `images` folder (`v1.png` to `v13.png`) for processing tasks in InsightFlow. Below is an example of how the system might retrieve and process images from the folder.
 
-```bash
-git clone https://github.com/Daudsarfraz/InsightFlow.git
-cd InsightFlow
-# Install dependencies (if applicable)
+### Example Demo Code:
+
+```python
+import os
+from PIL import Image
+import matplotlib.pyplot as plt
+
+# Folder containing images
+image_folder = 'images/'
+
+# Load images from v1.png to v13.png
+image_files = [f'v{i}.png' for i in range(1, 14)]
+
+# Display images for demo
+for image_file in image_files:
+    image_path = os.path.join(image_folder, image_file)
+    
+    # Open the image
+    try:
+        img = Image.open(image_path)
+        plt.imshow(img)
+        plt.title(f"Displaying {image_file}")
+        plt.axis('off')  # Hide axes
+        plt.show()
+    except FileNotFoundError:
+        print(f"Image {image_file} not found in the directory.")
+
